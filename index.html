@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-container">
+        <h1>Weather Explorer ☁️</h1>
+        <p class="subtitle">Choose a weather condition to explore</p>
+
+        <select id="weatherSelect">
+            <option value="">Select Weather</option>
+            <option value="sunny">Sunny</option>
+            <option value="cloudy">Cloudy</option>
+            <option value="rainy">Rainy</option>
+            <option value="stormy">Stormy</option>
+            <option value="snowy">Snowy</option>
+            <option value="windy">Windy</option>
+        </select>
+
+        <div class="weather-card" id="weatherCard">
+            <div class="weather-icon" id="weatherIcon">🌤️</div>
+            <h2 id="weatherTitle">Welcome!</h2>
+            <p id="weatherDescription">Select a weather condition to see its details.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

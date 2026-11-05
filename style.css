@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+    transition: background 0.5s ease;
+    padding: 20px;
+}
+
+.weather-container {
+    width: 100%;
+    max-width: 430px;
+    padding: 35px 25px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    color: #263b65;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #68758a;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #c8d7ed;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    background: white;
+    color: #263b65;
+}
+
+.weather-card {
+    margin-top: 25px;
+    padding: 30px 18px;
+    border-radius: 18px;
+    background: #edf5ff;
+    transition: 0.4s ease;
+}
+
+.weather-icon {
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+
+.weather-card h2 {
+    color: #263b65;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.weather-card p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+body.sunny {
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+}
+
+body.cloudy {
+    background: linear-gradient(135deg, #bdc3c7, #8e9eab);
+}
+
+body.rainy {
+    background: linear-gradient(135deg, #667db6, #485b83);
+}
+
+body.stormy {
+    background: linear-gradient(135deg, #232526, #414345);
+}
+
+body.snowy {
+    background: linear-gradient(135deg, #e6f0ff, #c9d6ff);
+}
+
+body.windy {
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+}
+
+body.stormy .weather-container {
+    background: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 480px) {
+    .weather-container {
+        padding: 28px 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
